@@ -14,6 +14,13 @@
 <junit.version>5.9.2</junit.version>  </properties>
 
   <dependencies>
+
+    <!-- https://mavenlibs.com/maven/dependency/org.webjars/material-ui -->
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>material-ui</artifactId>
+      <version>0.15.1</version>
+    </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-controls</artifactId>
@@ -66,7 +73,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>com.example.tipcalculator_app/com.example.tipcalculator_app.HelloApplication</mainClass>
+              <mainClass>com.example.tipcalculator_app/com.example.tipcalculator_app.TipCalculatorApplication</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
